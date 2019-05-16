@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frames.FXMLMenuController">
+   <left>
+      <VBox prefHeight="500.0" prefWidth="80.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#urunler" style="-fx-background-color: transparent;" text="Stock" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#da0a0a" radius="4.75" width="0.0" />
+               </effect></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#ui1" style="-fx-background-color: transparent;" text="Customer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#da0a0a" radius="4.75" width="0.0" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#ui2" style="-fx-background-color: transparent;" text="Sell" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#da0a0a" radius="4.75" width="0.0" />
+               </effect>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#clear" prefHeight="42.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="LogOut" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="25.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#da0a0a" radius="4.75" width="0.0" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

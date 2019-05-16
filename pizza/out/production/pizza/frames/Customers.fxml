@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml" fx:controller="frames.CustomersController">
+   <children>
+      <TableView fx:id="customerTable" layoutX="23.0" layoutY="23.0" prefHeight="464.0" prefWidth="313.0">
+        <columns>
+          <TableColumn fx:id="cIdColumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="cNameColumn" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="cCityColumn" prefWidth="75.0" text="city" />
+            <TableColumn fx:id="cBalanceColumn" prefWidth="87.0" text="balance" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="340.0" layoutY="230.0" spacing="25.0">
+         <children>
+            <TextField fx:id="nameText" promptText="Customer Name" />
+            <TextField fx:id="cityText" promptText="Customer City" />
+         </children>
+      </HBox>
+      <Button fx:id="addCustomerBtn" layoutX="673.0" layoutY="230.0" mnemonicParsing="false" onAction="#insertCustomer" text="Add" />
+      <HBox alignment="CENTER" layoutX="340.0" layoutY="110.0" spacing="10.0" />
+      <HBox layoutX="340.0" layoutY="320.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <TextField fx:id="cNameText" promptText="Name" />
+            <TextField fx:id="cCityText" promptText="City" />
+            <TextField fx:id="cBalanceText" promptText="Balance" />
+         </children>
+      </HBox>
+      <TextField fx:id="cIdText" layoutX="340.0" layoutY="277.0" prefHeight="25.0" prefWidth="149.0" promptText="Customer ID" />
+      <Button fx:id="setCustomerBtn" layoutX="506.0" layoutY="277.0" mnemonicParsing="false" onAction="#setCustomerInfo" prefHeight="25.0" prefWidth="68.0" text="Set" />
+      <Button fx:id="updateProductBtn" layoutX="434.0" layoutY="345.0" mnemonicParsing="false" onAction="#updateProductInfo" text="Update" />
+      <Button fx:id="deleteCustomerBtn" layoutX="540.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteCustomer" text="Delete" />
+      <Label layoutX="449.0" layoutY="23.0" text="Customers">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchCustomersBtn" layoutX="349.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchCustomers" text="List" />
+   </children>
+</AnchorPane>
